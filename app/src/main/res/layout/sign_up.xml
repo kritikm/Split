@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nameBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:hint="name"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/nameBox"
+        android:id="@+id/usernameBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/username_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:hint="username"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/usernameBox"
+        android:id="@+id/emailBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:textSize="17sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorAccent"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/emailBox"
+        android:id="@+id/passwordBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:hint="password"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@id/passwordBox"
+        android:id="@+id/reenterBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/re_enter_reg"
+            android:layout_below="@id/password_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="re-enter password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <Button
+        android:id="@+id/signup_reg"
+        android:layout_below="@id/reenterBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Register!"
+        android:textColor="#fff"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/cancel_reg"
+        android:layout_below="@id/signup_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="17sp"
+        android:text="Cancel"
+        android:textColor="#fff"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    android:id="@+id/main_layout">
+
+    <CheckBox
+        android:id="@+id/rememberme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:checked="true"
+        android:text="Remember Me"
+        android:textColor="@color/colorAccent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rememberme">
+        <requestFocus></requestFocus>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorAccent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/passwordInputLayout">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="username"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorAccent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rememberme"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="signUp"
+            android:text="Sign Up"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signupButton"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="login"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/showhide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Show Password"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

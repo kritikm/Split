@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Split!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_split">AddSplit</string>
+    <string name="intro_food">For Food!</string>
+    <string name="intro_movie">Movies!</string>
+    <string name="intro_travel">Travels!</string>
+    <string name="intro_food_desc">Manage your food bills</string>
+    <string name="intro_movie_desc">Or overpriced movie tickets</string>
+    <string name="intro_travel_desc">Or the cost of your tiring travel</string>
+    <string name="intro_all">We\'ve got your back</string>
+    <string name="skip">Skip</string>
+    <string name="start">Got it</string>
+    <string name="next">Next</string>
+</resources>
