@@ -1,0 +1,13 @@
+.gradle/
+.idea/
+Split.iml
+app/
+build.gradle
+build/
+gradle.properties
+gradle/
+gradlew
+gradlew.bat
+local.properties
+projectFilesBackup/
+settings.gradle
